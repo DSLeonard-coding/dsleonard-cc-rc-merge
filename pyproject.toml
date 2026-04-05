@@ -24,7 +24,8 @@ classifiers = [
   "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "qx",
+    "pyyaml>=6.0.3",
+    "dsleonard-qx",
 ]
 
 [project.urls]
@@ -56,5 +57,5 @@ git_describe_command = "git describe --dirty --tags --long --match '*v[0-9]*'"
 tag_regex = "^(?:(?P<pre>.*)-)?v(?P<version>[0-9.]+)(?:(?P<local>[a-z]+[0-9]*))?(-(?P<post>r[0-9]+))?.*$"
 
 [tool.uv.sources]
-qx = { git = "https://github.com/DSLeonard-coding/qx.git" }
+dsleonard-qx = { git = "https://github.com/DSLeonard-coding/qx.git" }
 
