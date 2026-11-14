@@ -18,8 +18,8 @@ requires-dist = [
 
 [[package]]
 name = "dsleonard-qx"
-version = "1.2.1.dev11+ga2b2ff161"
-source = { git = "https://github.com/DSLeonard-coding/qx.git#a2b2ff1617d7922ad15ea3a4ce6a9a69cac63c6a" }
+version = "1.2.1.dev13+g00a7f7c3a"
+source = { git = "https://github.com/DSLeonard-coding/qx.git#00a7f7c3ad2613f17fad660d48fb2a6af4021a4f" }
 
 [[package]]
 name = "pyyaml"

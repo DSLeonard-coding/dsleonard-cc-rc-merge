@@ -14,7 +14,10 @@
 import json
 import os
 import yaml
-from dsleonard_qx import *
+
+from dsleonard_qx import Qx  # noqa so linters won't move this # type: ignore
+qx=Qx(out_lvl=Qx.DEBUG, echo_lvl=Qx.DEBUG,prefix="dsleonard_cc_rc_merge: ")
+msg, dbg, warn, error = qx.msg, qx.dbg, qx.warn, qx.error
 
 def merge_rc_from_json(json_path, rc_path=".cookiecutterrc"):
     msg(f"\nMerging cookiecutter fields to your editable {rc_path}")
@@ -73,4 +76,4 @@ def merge_rc_from_json(json_path, rc_path=".cookiecutterrc"):
 
 
 if __name__ == "__main__":
-    generate_rc_from_json('.cookiecutter.json')
+    merge_rc_from_json('.cookiecutter.json')
